@@ -1,0 +1,289 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>八股文面试题 | Awei Blog</title><meta name="author" content="Awei"><meta name="copyright" content="Awei"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="用于记录和巩固一些面试相关知识点，不定期添加或修改(记载自B站狂神说Java课程）">
+<meta property="og:type" content="article">
+<meta property="og:title" content="八股文面试题">
+<meta property="og:url" content="https://awei-7.github.io/2024/05/16/%E5%85%AB%E8%82%A1%E6%96%87%E9%9D%A2%E8%AF%95%E9%A2%98/index.html">
+<meta property="og:site_name" content="Awei Blog">
+<meta property="og:description" content="用于记录和巩固一些面试相关知识点，不定期添加或修改(记载自B站狂神说Java课程）">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://awei-7.github.io/image/HeadPic/%E6%9D%BF%E9%B8%AD.jpg">
+<meta property="article:published_time" content="2024-05-16T04:20:57.179Z">
+<meta property="article:modified_time" content="2024-05-19T10:45:24.593Z">
+<meta property="article:author" content="Awei">
+<meta property="article:tag" content="笔记">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://awei-7.github.io/image/HeadPic/%E6%9D%BF%E9%B8%AD.jpg"><link rel="shortcut icon" href="/./image/HeadPic/w.jpg"><link rel="canonical" href="https://awei-7.github.io/2024/05/16/%E5%85%AB%E8%82%A1%E6%96%87%E9%9D%A2%E8%AF%95%E9%A2%98/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta/><link rel="stylesheet" href="/css/index.css?v=4.13.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.1/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '八股文面试题',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-05-19 18:45:24'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/style.css"><meta name="generator" content="Hexo 7.1.1"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/./image/HeadPic/w.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">5</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/./image/HeadPic/%E6%9D%BF%E9%B8%AD.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="Awei Blog"><span class="site-name">Awei Blog</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">八股文面试题</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-05-16T04:20:57.179Z" title="发表于 2024-05-16 12:20:57">2024-05-16</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-05-19T10:45:24.593Z" title="更新于 2024-05-19 18:45:24">2024-05-19</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">3k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>9分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="八股文面试题"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="一、MySQL数据库"><a href="#一、MySQL数据库" class="headerlink" title="一、MySQL数据库"></a>一、MySQL数据库</h2><h3 id="1-在MySQL中如何定位慢查询"><a href="#1-在MySQL中如何定位慢查询" class="headerlink" title="1.在MySQL中如何定位慢查询"></a>1.在MySQL中如何定位慢查询</h3><p>做接口测试的时候，可以在系统中部署运维的监控系统Skywalking，在展示的报表中可以看到具体哪一个接口慢，这里可以看到SQL的具体执行时间，所以可以定位到哪一个SQL出的问题</p>
+<p>然后MySQL中也提供了慢日志查询的功能，可以在MySQl的系统文件中开启这个功能，两个参数，一个是开启慢日志查询，一个是设置SQL语句执行时间超过多少就会被记录</p>
+<h3 id="2-如何分析这个执行的很慢的SQL语句"><a href="#2-如何分析这个执行的很慢的SQL语句" class="headerlink" title="2.如何分析这个执行的很慢的SQL语句"></a>2.如何分析这个执行的很慢的SQL语句</h3><p>可以在SQL语句前面加个EXPLAIN（MySQL的自动执行计划）来查看这条SQL的执行情况，比如看key和key_len看看是不是使用了索引，或者索引是不是失效了，看type字段看看sql是不是有优化空间，是不是存在全索引扫描或者全表扫描，看extra是不是有回表扫描的情况，这个可以通过添加索引或者修改返回字段来解决</p>
+<h3 id="3-什么是索引"><a href="#3-什么是索引" class="headerlink" title="3.什么是索引"></a>3.什么是索引</h3><p>索引是帮助MySQL高效获取数据的数据结构。就是来提高数据检索效率，降低数据库IO成本，也可以通过索引对数据排序，来降低CPU的消耗</p>
+<h3 id="4-索引的底层数据结构、"><a href="#4-索引的底层数据结构、" class="headerlink" title="4.索引的底层数据结构、"></a>4.索引的底层数据结构、</h3><p>MySQL底层默认搜索引擎是InnoDB，使用B+树的数据结构来存储索引，选B+树一个是因为阶数多，路径短，一个是只有叶子节点存指针和数据，非叶子节点都只存指针，三一个是叶子节点是双向链表，方便扫库和区间查询</p>
+<h3 id="5-B树和B-树的区别"><a href="#5-B树和B-树的区别" class="headerlink" title="5.B树和B+树的区别"></a>5.B树和B+树的区别</h3><ol>
+<li><p>B树的节点都存数据，B+树只有叶子节点存</p>
+</li>
+<li><p>范围查询，B+树效率更高，因为B+树叶子节点是双向链表</p>
+</li>
+</ol>
+<h3 id="6-聚簇索引和非聚簇索引"><a href="#6-聚簇索引和非聚簇索引" class="headerlink" title="6.聚簇索引和非聚簇索引"></a>6.聚簇索引和非聚簇索引</h3><p>聚簇索引有且只有一个，一般使用主键索引作为聚簇索引，数据跟索引放到一起</p>
+<p>非聚簇索引也就是二级索引，数据和索引分开放，叶子节点保存的是对应的主键</p>
+<h3 id="7-回表查询"><a href="#7-回表查询" class="headerlink" title="7.回表查询"></a>7.回表查询</h3><p>就是查询返回的字段不在索引字段中，需要拿着二级索引查到的主键，到聚簇索引中找到一整行的数据，然会在返回需要的字段</p>
+<h3 id="8-覆盖索引"><a href="#8-覆盖索引" class="headerlink" title="8.覆盖索引"></a>8.覆盖索引</h3><p>就是说需要查询返回的字段正好在使用的索引中，比如说直接找主键值，就直接使用聚簇索引，一次把整行数据都返回，效率高</p>
+<h3 id="9-MySQL超大分页怎么解决"><a href="#9-MySQL超大分页怎么解决" class="headerlink" title="9.MySQL超大分页怎么解决"></a>9.MySQL超大分页怎么解决</h3><p>超大分页就是说数据量很大的时候，使用了limit分页查询，然后要对数据进行排序，这效率很低，这时候可以用覆盖索引跟子查询解决</p>
+<p>就是说先用子查询找到你要查的那一页的id，然后覆盖索引走聚簇索引，直接能把这些id对应的数据都拿到</p>
+<h3 id="10-索引的创建原则"><a href="#10-索引的创建原则" class="headerlink" title="10.索引的创建原则"></a>10.索引的创建原则</h3><ul>
+<li>数据量很大必须，这个得看业务，十几万几十万？</li>
+<li>查询比较频繁的，比如说排序或者分组什么的</li>
+<li>尽量创建联合索引，走覆盖索引效率高</li>
+<li>要是字段很长可以看着弄个前缀索引</li>
+</ul>
+<h3 id="11-索引失效的情况"><a href="#11-索引失效的情况" class="headerlink" title="11.索引失效的情况"></a>11.索引失效的情况</h3><ol>
+<li>比如说没遵循最左匹配法则</li>
+<li>或者模糊查询%在前面，感觉这种也算(1)</li>
+<li>在添加索引的字段上运算或者类型转换</li>
+<li>复合索引中使用范围查询，右边的条件索引失效</li>
+</ol>
+<h3 id="12-优化SQL"><a href="#12-优化SQL" class="headerlink" title="12.优化SQL"></a>12.优化SQL</h3><ol>
+<li>优化表的设计，字段的类型选用啥的</li>
+<li>索引优化，比如说联合索引包含的字段什么的</li>
+<li>SQL语句优化，使用SELECT * 容易导致索引失效，二级索引什么的</li>
+<li>主从复制、读写分离，不让写入数据影响读的操作</li>
+<li>分库分表</li>
+</ol>
+<h3 id="13-事务的特性"><a href="#13-事务的特性" class="headerlink" title="13.事务的特性"></a>13.事务的特性</h3><p>ACID</p>
+<p>A：原子性（Automicity）要么都成功，要么都失败</p>
+<p>C：一致性（Consistency）数据一致，比如说发生数据交换的时候，一边减少另一边就一定要增加</p>
+<p>I：隔离性（Isolation）事务在发生时，不受其他事务影响、</p>
+<p>D：持久性（Durability）事务提交后，数据持久化，就是保存了</p>
+<h3 id="14-并发事务带来的问题"><a href="#14-并发事务带来的问题" class="headerlink" title="14.并发事务带来的问题"></a>14.并发事务带来的问题</h3><p>脏读：就是说A事务修改了数据还没提交就被B事务读到了</p>
+<p>不可重复读：A事务先读一次数据，B事务修改数据然后提交，A事务又读一次数据，A事务两次读的数据不一样</p>
+<p>幻读：就是A事务先读几行数据，B事务添加了几行数据，A事务再查询的时候发现多了几行数据</p>
+<h3 id="15-怎么解决并发问题？MySQL的隔离级别"><a href="#15-怎么解决并发问题？MySQL的隔离级别" class="headerlink" title="15.怎么解决并发问题？MySQL的隔离级别"></a>15.怎么解决并发问题？MySQL的隔离级别</h3><p>未提交读（read uncommitted）解决不了任何问题</p>
+<p>读已提交（read committed）只解决脏读</p>
+<p>可重复读（repeatable read）解决脏读、不可重复读，也是MySQL默认隔离级别</p>
+<p>串行化（serializable）：解决所有问题，但性能低</p>
+<h3 id="16-undo-log和redo-log的区别"><a href="#16-undo-log和redo-log的区别" class="headerlink" title="16.undo log和redo log的区别"></a>16.undo log和redo log的区别</h3><p>redo log日志记录的时数据页的物理变化，服务宕机的时候用来同步数据，undo log主要记录逻辑日志，事务回滚时使用逆操作来回复原来的数据</p>
+<p>redo log保证事务的持久性，undo log保证事务的原子性和一致性</p>
+<h3 id="17-解决MVCC，怎么保证事务的隔离性"><a href="#17-解决MVCC，怎么保证事务的隔离性" class="headerlink" title="17.解决MVCC，怎么保证事务的隔离性"></a>17.解决MVCC，怎么保证事务的隔离性</h3><p>事务的隔离性由锁和MVCC实现</p>
+<p>MVCC是多版本并发控制，就是维护一个数据的多个版本，是读写操作没有冲突</p>
+<p>MVCC底层分成三个部分：隐藏字段、undo log日志、readView读视图</p>
+<p>隐藏字段有</p>
+<ol>
+<li>rex_id（事务id），记录每一次事务操作id，自增的</li>
+<li>roll_pointer（回滚指针），指向上一个版本的事务版本记录地址</li>
+</ol>
+<p>undo log 记录回滚日志，存储老版本数据，并形成一个版本链，通过roll_pointer</p>
+<p>readView 就是通过一些规则判断出访问哪个版本的数据。rc隔离级别下，每次执行快照读时都生成一次readView；rr隔离级别只有第一次执行快照读时生成readView</p>
+<h3 id="18-主从同步原理"><a href="#18-主从同步原理" class="headerlink" title="18.主从同步原理"></a>18.主从同步原理</h3><p>MySQL主从复制核心是二进制日志，其中记录了所有DDL和DML语句。</p>
+<p>主从同步具体过程：</p>
+<ol>
+<li>Master主库提交事务时，把变更数据记录在二进制文件Binlog中</li>
+<li>从库读取主库的二进制文件Binlog，写入从库的中继日志Relay Log</li>
+<li>slave重做中级日志中的事件，以此改变从库的数据</li>
+</ol>
+<h3 id="19-分库分表"><a href="#19-分库分表" class="headerlink" title="19.分库分表"></a>19.分库分表</h3><p>水平分库：将一个库的数据拆分到多个库中，解决数据量大和高并发，库都相同</p>
+<p>水平分表：解决单表存储和性能问题</p>
+<p>垂直分库：根据业务进行拆分，高并发下提高磁盘IO和网络连接数</p>
+<p>垂直分表：冷热数据分离，多表互不影响</p>
+<h2 id="二、Spring框架"><a href="#二、Spring框架" class="headerlink" title="二、Spring框架"></a>二、Spring框架</h2><h3 id="1-Spring框架中的单例bean时线程安全的吗"><a href="#1-Spring框架中的单例bean时线程安全的吗" class="headerlink" title="1.Spring框架中的单例bean时线程安全的吗"></a>1.Spring框架中的单例bean时线程安全的吗</h3><p>不是线程安全的</p>
+<p>多用户同时请求一个服务时，Spring容器会给每一个请求分配一个线程，多个线程会并发执行这个请求对应的业务逻辑，而Spring框架并没有对单例bean进行任何多线程的封装处理</p>
+<h3 id="2-什么是AOP"><a href="#2-什么是AOP" class="headerlink" title="2.什么是AOP"></a>2.什么是AOP</h3><p>面向切面编程，</p>
+<h3 id="3-Spring中的事务怎么实现"><a href="#3-Spring中的事务怎么实现" class="headerlink" title="3.Spring中的事务怎么实现"></a>3.Spring中的事务怎么实现</h3><p>本质是通过AOP对一个方法前后进行拦截，在执行方法前开启事务，之后根据执行情况提交或者回滚事务</p>
+<h3 id="4-Spring中事务失效的情况"><a href="#4-Spring中事务失效的情况" class="headerlink" title="4.Spring中事务失效的情况"></a>4.Spring中事务失效的情况</h3><ol>
+<li>异常捕获处理：就是自己处理了异常没有抛出，比如try catch，这种时候手动抛出就行</li>
+<li>抛出检查异常，配置roll back for属性为Exception，其实就是默认检查抛出某一类异常，而新的异常不在这类里，就扩大范围</li>
+<li>非public方法导致的异常，将方法改成public</li>
+</ol>
+<h3 id="5-Spring中bean的生命周期"><a href="#5-Spring中bean的生命周期" class="headerlink" title="5.Spring中bean的生命周期"></a>5.Spring中bean的生命周期</h3><ol>
+<li>通过BeanDefinition获取bean的定义信息</li>
+<li>调用构造函数实例化bean</li>
+<li>bean的依赖注入</li>
+<li>处理Aware接口（BeanNameAware、BeanFactoryAware、ApplicationContextAware）</li>
+<li>Bean的后置处理器BeanPoatProcessor-前置</li>
+<li>初始化方法（InitializingBean、init-method）</li>
+<li>Bean的后置处理器BeanPostProcessor-后置</li>
+<li>销毁bean</li>
+</ol>
+<h3 id="6-构造方法出现循环依赖怎么解决"><a href="#6-构造方法出现循环依赖怎么解决" class="headerlink" title="6.构造方法出现循环依赖怎么解决"></a>6.构造方法出现循环依赖怎么解决</h3><p>A依赖于B，B依赖于A，构造函数注入</p>
+<p>因为bean声明周期中构造函数是第一个执行的，所以spring框架并不能解决问题</p>
+<p>使用@lazy懒加载，什么时候需要对象在进行bean对象的创建</p>
+<h3 id="7-SpringMVC的执行流程"><a href="#7-SpringMVC的执行流程" class="headerlink" title="7.SpringMVC的执行流程"></a>7.SpringMVC的执行流程</h3><ol>
+<li>用户发送请求到前端控制器DisPatcherServlet</li>
+<li>DisPatcherSerclet收到请求调用HandlerMapping（处理映射器）</li>
+<li>HandlerMapping找到具体的处理器，生成处理器对象以及处理器拦截器（如果有），在一起返回给DisPatcherServlet</li>
+<li>dispatcherServlet调用handlerAdapter（处理器适配器）</li>
+<li>HandlerAdapter经过适配调用具体的处理器（Handler&#x2F;Controller）</li>
+<li>方法上添加了@ResponseBody</li>
+<li>通过HttpMessageConverter来返回结果转换为JSON并相应</li>
+</ol>
+<h3 id="8-Spring框架的常见注解"><a href="#8-Spring框架的常见注解" class="headerlink" title="8.Spring框架的常见注解"></a>8.Spring框架的常见注解</h3><p>@component、@Controller、@Service、@Repository</p>
+<p>@Autowired、@Import</p>
+<h3 id="9-Springboot的自动装配"><a href="#9-Springboot的自动装配" class="headerlink" title="9.Springboot的自动装配"></a>9.Springboot的自动装配</h3><ol>
+<li>springboot项目中的引导类上有个注解@SpringBootApplication，他对三个注解进行封装:@SpringBootConfiguration、@EnableAutoConfiguration、@ComponentScan</li>
+<li>其中@EnableAutoConfiguration是实现自动化配置的核心注解，就是通过@import注解导入对应的配置选择器。内部读取了相关jar包的classpath路径下META-INF&#x2F;spring.factories文件中配置的全类名，在这些配置类中定义的bean对根据条件注解所指定的条件来决定是否需要将其导入Spring容器中</li>
+<li>条件判断会有像@ConditionalOnClass这样的注解，判断是否有对象的class文件，有就加载这个类，把这个配置的所有Bean放入spring容器中使用</li>
+</ol>
+<h2 id="三、MyBatis"><a href="#三、MyBatis" class="headerlink" title="三、MyBatis"></a>三、MyBatis</h2><h3 id="1-MyBatis的执行流程"><a href="#1-MyBatis的执行流程" class="headerlink" title="1.MyBatis的执行流程"></a>1.MyBatis的执行流程</h3><ol>
+<li>读取MyBatis的配置文件：mybatis-config.xml加载运行环境和映射文件</li>
+<li>构建会话工厂SqlSessionFactory</li>
+<li>会话工厂创建SqlSession对象（包含了执行SQL语句的所有方法）</li>
+<li>操作数据库的接口，Executor执行器，同时负责查询缓存的维护</li>
+<li>Executor接口的执行方法中有一个MappedStatement类型的参数，封装了映射信息</li>
+<li>输入参数映射</li>
+<li>输出参数映射</li>
+</ol>
+<h3 id="2-Mybatis是否支持延迟加载"><a href="#2-Mybatis是否支持延迟加载" class="headerlink" title="2.Mybatis是否支持延迟加载"></a>2.Mybatis是否支持延迟加载</h3><ul>
+<li>延迟加载的意思是：就是在需要用到数据时才进行加载，不需要时就不加载</li>
+<li>Mybatis支持一对一关联对象和一对多关联集合对象的延迟加载</li>
+<li>在Mybatis配置文件中，可以配置是否启用延迟加载lazyLoadingEnabled&#x3D;true|false，默认关闭</li>
+</ul>
+<h3 id="3-延迟加载的底层原理"><a href="#3-延迟加载的底层原理" class="headerlink" title="3.延迟加载的底层原理"></a>3.延迟加载的底层原理</h3><ol>
+<li>使用CGLIB创建目标对象的代理对象</li>
+<li>当调用目标方法时，进入拦截器invoke方法，发现目标方法时null值，执行sql查询</li>
+<li>获取数据以后，调用set方法设置属性值，在继续查询目标方法，就有值了</li>
+</ol>
+<h3 id="4-Mybatis的一级、二级缓存"><a href="#4-Mybatis的一级、二级缓存" class="headerlink" title="4.Mybatis的一级、二级缓存"></a>4.Mybatis的一级、二级缓存</h3><ul>
+<li>一级缓存：基于PerpetualCache的HashMap本地缓存，存储作用域时Session，当会话进行flush或close之后，改Session中的所有Cache清空，默认打开一级缓存</li>
+<li>二级缓存：基于namespace和mapper的作用域起作用的，不依赖于SQL session，默认使用PerpetualCache，HashMap存储。要单独开启，一个是核心配置，一个是mapper映射文件</li>
+</ul>
+<h3 id="5-Mybatis的二级缓存什么时候会清理缓存中的数据"><a href="#5-Mybatis的二级缓存什么时候会清理缓存中的数据" class="headerlink" title="5.Mybatis的二级缓存什么时候会清理缓存中的数据"></a>5.Mybatis的二级缓存什么时候会清理缓存中的数据</h3><p>当某一个作用域（一级缓存Session&#x2F;二级缓存Namespaces）进行了新增、修改、删除操作后，默认该作用域下所有select中的缓存将被clear</p>
+</article><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="/./image/HeadPic/%E6%9D%BF%E9%B8%AD.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2024/04/15/Java%E5%9F%BA%E7%A1%80/" title="Java基础-笔记"><img class="cover" src="/./image/HeadPic/%E5%8F%AF%E8%8E%89.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">Java基础-笔记</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/./image/HeadPic/w.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Awei</div><div class="author-info__description">去码头上整点薯条！</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">5</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn"><i class="fab fa-github"></i><span>这可能是个链接</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/xxxxx" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:xxxxxx@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">其实没啥公告的</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81MySQL%E6%95%B0%E6%8D%AE%E5%BA%93"><span class="toc-number">1.</span> <span class="toc-text">一、MySQL数据库</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E5%9C%A8MySQL%E4%B8%AD%E5%A6%82%E4%BD%95%E5%AE%9A%E4%BD%8D%E6%85%A2%E6%9F%A5%E8%AF%A2"><span class="toc-number">1.1.</span> <span class="toc-text">1.在MySQL中如何定位慢查询</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%A6%82%E4%BD%95%E5%88%86%E6%9E%90%E8%BF%99%E4%B8%AA%E6%89%A7%E8%A1%8C%E7%9A%84%E5%BE%88%E6%85%A2%E7%9A%84SQL%E8%AF%AD%E5%8F%A5"><span class="toc-number">1.2.</span> <span class="toc-text">2.如何分析这个执行的很慢的SQL语句</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E4%BB%80%E4%B9%88%E6%98%AF%E7%B4%A2%E5%BC%95"><span class="toc-number">1.3.</span> <span class="toc-text">3.什么是索引</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E7%B4%A2%E5%BC%95%E7%9A%84%E5%BA%95%E5%B1%82%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E3%80%81"><span class="toc-number">1.4.</span> <span class="toc-text">4.索引的底层数据结构、</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-B%E6%A0%91%E5%92%8CB-%E6%A0%91%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">1.5.</span> <span class="toc-text">5.B树和B+树的区别</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-%E8%81%9A%E7%B0%87%E7%B4%A2%E5%BC%95%E5%92%8C%E9%9D%9E%E8%81%9A%E7%B0%87%E7%B4%A2%E5%BC%95"><span class="toc-number">1.6.</span> <span class="toc-text">6.聚簇索引和非聚簇索引</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-%E5%9B%9E%E8%A1%A8%E6%9F%A5%E8%AF%A2"><span class="toc-number">1.7.</span> <span class="toc-text">7.回表查询</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-%E8%A6%86%E7%9B%96%E7%B4%A2%E5%BC%95"><span class="toc-number">1.8.</span> <span class="toc-text">8.覆盖索引</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-MySQL%E8%B6%85%E5%A4%A7%E5%88%86%E9%A1%B5%E6%80%8E%E4%B9%88%E8%A7%A3%E5%86%B3"><span class="toc-number">1.9.</span> <span class="toc-text">9.MySQL超大分页怎么解决</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10-%E7%B4%A2%E5%BC%95%E7%9A%84%E5%88%9B%E5%BB%BA%E5%8E%9F%E5%88%99"><span class="toc-number">1.10.</span> <span class="toc-text">10.索引的创建原则</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#11-%E7%B4%A2%E5%BC%95%E5%A4%B1%E6%95%88%E7%9A%84%E6%83%85%E5%86%B5"><span class="toc-number">1.11.</span> <span class="toc-text">11.索引失效的情况</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#12-%E4%BC%98%E5%8C%96SQL"><span class="toc-number">1.12.</span> <span class="toc-text">12.优化SQL</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#13-%E4%BA%8B%E5%8A%A1%E7%9A%84%E7%89%B9%E6%80%A7"><span class="toc-number">1.13.</span> <span class="toc-text">13.事务的特性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#14-%E5%B9%B6%E5%8F%91%E4%BA%8B%E5%8A%A1%E5%B8%A6%E6%9D%A5%E7%9A%84%E9%97%AE%E9%A2%98"><span class="toc-number">1.14.</span> <span class="toc-text">14.并发事务带来的问题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#15-%E6%80%8E%E4%B9%88%E8%A7%A3%E5%86%B3%E5%B9%B6%E5%8F%91%E9%97%AE%E9%A2%98%EF%BC%9FMySQL%E7%9A%84%E9%9A%94%E7%A6%BB%E7%BA%A7%E5%88%AB"><span class="toc-number">1.15.</span> <span class="toc-text">15.怎么解决并发问题？MySQL的隔离级别</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#16-undo-log%E5%92%8Credo-log%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">1.16.</span> <span class="toc-text">16.undo log和redo log的区别</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#17-%E8%A7%A3%E5%86%B3MVCC%EF%BC%8C%E6%80%8E%E4%B9%88%E4%BF%9D%E8%AF%81%E4%BA%8B%E5%8A%A1%E7%9A%84%E9%9A%94%E7%A6%BB%E6%80%A7"><span class="toc-number">1.17.</span> <span class="toc-text">17.解决MVCC，怎么保证事务的隔离性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#18-%E4%B8%BB%E4%BB%8E%E5%90%8C%E6%AD%A5%E5%8E%9F%E7%90%86"><span class="toc-number">1.18.</span> <span class="toc-text">18.主从同步原理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#19-%E5%88%86%E5%BA%93%E5%88%86%E8%A1%A8"><span class="toc-number">1.19.</span> <span class="toc-text">19.分库分表</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81Spring%E6%A1%86%E6%9E%B6"><span class="toc-number">2.</span> <span class="toc-text">二、Spring框架</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-Spring%E6%A1%86%E6%9E%B6%E4%B8%AD%E7%9A%84%E5%8D%95%E4%BE%8Bbean%E6%97%B6%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8%E7%9A%84%E5%90%97"><span class="toc-number">2.1.</span> <span class="toc-text">1.Spring框架中的单例bean时线程安全的吗</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E4%BB%80%E4%B9%88%E6%98%AFAOP"><span class="toc-number">2.2.</span> <span class="toc-text">2.什么是AOP</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-Spring%E4%B8%AD%E7%9A%84%E4%BA%8B%E5%8A%A1%E6%80%8E%E4%B9%88%E5%AE%9E%E7%8E%B0"><span class="toc-number">2.3.</span> <span class="toc-text">3.Spring中的事务怎么实现</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-Spring%E4%B8%AD%E4%BA%8B%E5%8A%A1%E5%A4%B1%E6%95%88%E7%9A%84%E6%83%85%E5%86%B5"><span class="toc-number">2.4.</span> <span class="toc-text">4.Spring中事务失效的情况</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-Spring%E4%B8%ADbean%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F"><span class="toc-number">2.5.</span> <span class="toc-text">5.Spring中bean的生命周期</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-%E6%9E%84%E9%80%A0%E6%96%B9%E6%B3%95%E5%87%BA%E7%8E%B0%E5%BE%AA%E7%8E%AF%E4%BE%9D%E8%B5%96%E6%80%8E%E4%B9%88%E8%A7%A3%E5%86%B3"><span class="toc-number">2.6.</span> <span class="toc-text">6.构造方法出现循环依赖怎么解决</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-SpringMVC%E7%9A%84%E6%89%A7%E8%A1%8C%E6%B5%81%E7%A8%8B"><span class="toc-number">2.7.</span> <span class="toc-text">7.SpringMVC的执行流程</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-Spring%E6%A1%86%E6%9E%B6%E7%9A%84%E5%B8%B8%E8%A7%81%E6%B3%A8%E8%A7%A3"><span class="toc-number">2.8.</span> <span class="toc-text">8.Spring框架的常见注解</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-Springboot%E7%9A%84%E8%87%AA%E5%8A%A8%E8%A3%85%E9%85%8D"><span class="toc-number">2.9.</span> <span class="toc-text">9.Springboot的自动装配</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81MyBatis"><span class="toc-number">3.</span> <span class="toc-text">三、MyBatis</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-MyBatis%E7%9A%84%E6%89%A7%E8%A1%8C%E6%B5%81%E7%A8%8B"><span class="toc-number">3.1.</span> <span class="toc-text">1.MyBatis的执行流程</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-Mybatis%E6%98%AF%E5%90%A6%E6%94%AF%E6%8C%81%E5%BB%B6%E8%BF%9F%E5%8A%A0%E8%BD%BD"><span class="toc-number">3.2.</span> <span class="toc-text">2.Mybatis是否支持延迟加载</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E5%BB%B6%E8%BF%9F%E5%8A%A0%E8%BD%BD%E7%9A%84%E5%BA%95%E5%B1%82%E5%8E%9F%E7%90%86"><span class="toc-number">3.3.</span> <span class="toc-text">3.延迟加载的底层原理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-Mybatis%E7%9A%84%E4%B8%80%E7%BA%A7%E3%80%81%E4%BA%8C%E7%BA%A7%E7%BC%93%E5%AD%98"><span class="toc-number">3.4.</span> <span class="toc-text">4.Mybatis的一级、二级缓存</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-Mybatis%E7%9A%84%E4%BA%8C%E7%BA%A7%E7%BC%93%E5%AD%98%E4%BB%80%E4%B9%88%E6%97%B6%E5%80%99%E4%BC%9A%E6%B8%85%E7%90%86%E7%BC%93%E5%AD%98%E4%B8%AD%E7%9A%84%E6%95%B0%E6%8D%AE"><span class="toc-number">3.5.</span> <span class="toc-text">5.Mybatis的二级缓存什么时候会清理缓存中的数据</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2024/05/16/%E5%85%AB%E8%82%A1%E6%96%87%E9%9D%A2%E8%AF%95%E9%A2%98/" title="八股文面试题"><img src="/./image/HeadPic/%E6%9D%BF%E9%B8%AD.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="八股文面试题"/></a><div class="content"><a class="title" href="/2024/05/16/%E5%85%AB%E8%82%A1%E6%96%87%E9%9D%A2%E8%AF%95%E9%A2%98/" title="八股文面试题">八股文面试题</a><time datetime="2024-05-16T04:20:57.179Z" title="发表于 2024-05-16 12:20:57">2024-05-16</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/04/15/Java%E5%9F%BA%E7%A1%80/" title="Java基础-笔记"><img src="/./image/HeadPic/%E5%8F%AF%E8%8E%89.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Java基础-笔记"/></a><div class="content"><a class="title" href="/2024/04/15/Java%E5%9F%BA%E7%A1%80/" title="Java基础-笔记">Java基础-笔记</a><time datetime="2024-04-15T08:18:02.220Z" title="发表于 2024-04-15 16:18:02">2024-04-15</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/04/13/Spring5/" title="Spring5-笔记"><img src="/./image/HeadPic/%E4%B8%83%E4%B8%83.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Spring5-笔记"/></a><div class="content"><a class="title" href="/2024/04/13/Spring5/" title="Spring5-笔记">Spring5-笔记</a><time datetime="2024-04-13T15:46:00.287Z" title="发表于 2024-04-13 23:46:00">2024-04-13</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/04/10/MyBatis/" title="MyBatis-笔记"><img src="/./image/HeadPic/%E7%94%B3%E9%B9%A4.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="MyBatis-笔记"/></a><div class="content"><a class="title" href="/2024/04/10/MyBatis/" title="MyBatis-笔记">MyBatis-笔记</a><time datetime="2024-04-10T01:33:16.980Z" title="发表于 2024-04-10 09:33:16">2024-04-10</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/04/09/MySQL/" title="MySQL-笔记"><img src="/./image/HeadPic/%E5%86%B0%E9%BA%92%E9%BA%9F.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="MySQL-笔记"/></a><div class="content"><a class="title" href="/2024/04/09/MySQL/" title="MySQL-笔记">MySQL-笔记</a><time datetime="2024-04-09T04:26:44.555Z" title="发表于 2024-04-09 12:26:44">2024-04-09</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2024 By Awei</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">常看，勤改</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="/js/tw_cn.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js?v=4.13.0"></script></div></div></body></html>
